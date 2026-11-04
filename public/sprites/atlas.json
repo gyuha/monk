@@ -1,0 +1,23 @@
+{
+  "cell": {
+    "width": 48,
+    "height": 64,
+    "frames": 4,
+    "directions": 4
+  },
+  "directionRows": [
+    "front",
+    "right",
+    "left",
+    "back"
+  ],
+  "columns": [
+    "contact",
+    "passing",
+    "opposite-contact",
+    "passing"
+  ],
+  "filter": "nearest",
+  "transparent": true,
+  "source": "src/pixel-art.js"
+}

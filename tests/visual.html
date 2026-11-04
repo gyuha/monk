@@ -1,0 +1,9 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>MOSSBOUND HD-2D visual fixture</title><style>html,body,#stage{width:100%;height:100%;margin:0;overflow:hidden}#stage{position:relative}canvas{display:block}</style><div id="stage"></div><script type="module">
+import {World} from '/src/world.js';
+import {groundHeight} from '/src/environment.js';
+import {ENEMY_TYPES} from '/src/pixel-art.js';
+window.errors=[];window.addEventListener('error',e=>window.errors.push(e.message));
+const world=new World(document.querySelector('#stage'),()=>{},()=>{});world.start({kind:0,map:0,mode:'endless',populate:false});world.paused=true;
+if(new URLSearchParams(location.search).has('horde')){world.run.time=70;world.spawnWave(220,{inner:9,outer:19});}else for(const [i,type]of ENEMY_TYPES.entries()){world.spawn(false,type.id);const e=world.enemies.at(-1),x=[-4,3,6,1,-3,4][i],z=[4,6,3,-4,-5,-7][i];e.mesh.position.set(x,groundHeight(x,z),z);}
+world.camera.position.set(12,16.5,24);world.camera.lookAt(0,1,0);window.visualWorld=world;window.ready=true;
+</script></html>

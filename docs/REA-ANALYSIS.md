@@ -1,5 +1,7 @@
 # PokéBonk 분석 및 MOSSBOUND 재구성
 
+이 문서는 초기 버전의 원본 분석 기록입니다. 이후 v1.1에서 2D 픽셀 캐릭터와 넓은 3D 마을, 다양한 적을 도입했습니다. 최신 구현은 [HD-2D 문서](HD2D.md)를 참고하세요.
+
 대상: https://pokebonk.com/?lang=ko (관찰 시 표시 버전 v0.8.90, build mvznto7p).
 
 ## 근거와 분석 범위
