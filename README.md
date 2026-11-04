@@ -2,7 +2,7 @@
 
 작은 정령과 함께 숲의 그림자를 물리치는 **싱글 플레이 HD-2D 서바이버**입니다. 직접 그린 2D 픽셀 캐릭터가 입체적인 마을과 언덕을 탐험하며, 자동 공격과 성장·대시·궁극기로 몰려오는 적을 상대합니다.
 
-**[브라우저에서 바로 플레이](https://gyuha.github.io/monk/)**
+**[브라우저에서 바로 플레이](https://gyuha.com/monk/)**
 
 ![픽셀 정령과 3D 물레방아 마을. 개울과 다리, 높은 마을로 이어지는 계단길이 보입니다.](docs/screenshots/village.png)
 
@@ -53,7 +53,8 @@ npm run preview
 
 `main`에 푸시하면 [Pages 워크플로](.github/workflows/pages.yml)가 테스트 → 빌드 → 에셋 경로 검증 → 배포를 자동 실행합니다. Actions 탭의 **Deploy GitHub Pages → Run workflow**에서도 수동으로 배포할 수 있습니다.
 
-- 서비스 주소: <https://gyuha.github.io/monk/>
+- 서비스 주소: <https://gyuha.com/monk/>
+- GitHub Pages 주소 <https://gyuha.github.io/monk/>는 계정에 설정된 기존 커스텀 도메인으로 연결됩니다.
 - 저장소의 **Settings → Pages → Source**는 **GitHub Actions**를 사용합니다.
 - Vite의 상대 경로 `base: './'`와 `import.meta.env.BASE_URL`을 사용해 `/monk/` 하위에서도 JavaScript·CSS·파비콘을 불러옵니다.
 - 다른 저장소로 복제했다면 그 저장소에서도 Pages의 Source를 GitHub Actions로 설정하세요. 빌드 결과에 저장소 이름이 고정되지 않습니다.
