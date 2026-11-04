@@ -8,7 +8,8 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "sprites": "node scripts/export-sprites.mjs"
+    "sprites": "node scripts/export-sprites.mjs",
+    "check:pages": "node scripts/check-pages-build.mjs"
   },
   "dependencies": {
     "three": "0.180.0"

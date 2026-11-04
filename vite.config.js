@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // Resolve assets beside index.html on both / and GitHub project pages (/monk/).
+  base: './',
   build: {
     rollupOptions: {
       output: {
